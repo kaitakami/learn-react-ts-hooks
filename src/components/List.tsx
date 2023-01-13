@@ -1,15 +1,18 @@
-import { Link } from "react-router-dom";
 import ListEl from "./ListEl";
+import { hooksData } from "../data/hooksData";
 
 const List = () => {
   return (
     <>
-      <ul>
+      <ul className="flex flex-col gap-5">
+        {hooksData.map(({ title, description, slug }) => (
           <ListEl
-            title={"useState"}
-            description={"Learn useState with a basic counter application."}
-			slug={"/useState"}
+            key={slug}
+            title={title}
+            description={description}
+            slug={slug}
           />
+        ))}
       </ul>
     </>
   );
