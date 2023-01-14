@@ -1,11 +1,13 @@
 import { useState } from "react";
+import NavTitle from "../components/NavTitle";
 
 const UseState = () => {
   const [count, setCount] = useState(0);
 
   return (
+    <>
+      <NavTitle title="Counter - useState hook" />
     <div className="text-left flex flex-col gap-6">
-      <h1>Counter - useState hook</h1>
       <br />
       <p className="font-bold text-center">
         The current count is <code>{count}</code>
@@ -29,23 +31,24 @@ const UseState = () => {
       <br />
       <pre>
         {`
-            import { useState } from 'react';
+          import { useState } from 'react';
 
-            function Counter() {
-            const [count, setCount] = useState(0);
+          function Counter() {
+          const [count, setCount] = useState(0);
 
-            return (
-                <>
-                <p>The count is {count}</p>
-                <button onClick={() => setCount(count + 1)}>
-                    Increment
-                </button>
-                </>
-            );
-            }
-            `}
+          return (
+              <>
+              <p>The count is {count}</p>
+              <button onClick={() => setCount(count + 1)}>
+                  Increment
+              </button>
+              </>
+          );
+          }
+          `}
       </pre>
     </div>
+    </>
   );
 };
 
