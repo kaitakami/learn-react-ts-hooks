@@ -90,3 +90,7 @@ code {
   background-color: #f9f2f4;
   border-radius: 0.2rem;
 }
+
+.container {
+  height: 90vh;
+}
