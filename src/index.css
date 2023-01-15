@@ -79,6 +79,8 @@ pre {
   padding: 1rem;
   border-radius: 0.5rem;
   overflow-x: auto;
+  margin: auto;
+  width: 80vw;
 }
 
 code {

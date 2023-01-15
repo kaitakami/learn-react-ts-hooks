@@ -50,10 +50,9 @@ const UseMemo = () => {
           The useMemo hook is a React hook that allows you to memoize a value. Memoization is a technique that improves the performance of a function by caching its results. This is particularly useful when the function is expensive to compute and its results do not change frequently.
         </p>
         <h3 className='font-bold'>Example</h3>
-        <div className='p-8 overflow-x-auto max-w-xs m-auto md:max-w-screen-sm lg:max-w-screen-md'>
-          <pre>
-            <code>
-              `{`
+        <pre>
+          <code>
+            `{`
                             import { useMemo, useState } from 'react';
 
                             // Initial data array
@@ -92,9 +91,8 @@ const UseMemo = () => {
                               );
                             }
                         `}`
-            </code>
-          </pre>
-        </div>
+          </code>
+        </pre>
       </section>
     </>
   )
