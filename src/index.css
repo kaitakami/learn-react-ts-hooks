@@ -34,7 +34,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  max-width: 100vw;
 }
 
 h1 {
@@ -69,6 +68,7 @@ pre {
   overflow-x: auto;
   margin: auto;
   width: 80vw;
+  max-width: 1280px;
 }
 
 code {
